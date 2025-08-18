@@ -33,7 +33,7 @@ const SideBar = () => {
                                 className='cursor-pointer text-sm'>Edit Profile</p>
                             <hr className='my-2 border-t border-gray-500' />
                             <p
-                                onClick={() => logout()}
+                                onClick={() => { logout(); setSelectedUser(null) }}
                                 className='cursor-pointer text-sm'>Logout</p>
                         </div>
                     </div>
